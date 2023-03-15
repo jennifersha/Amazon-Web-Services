@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Page</title>
+  <style>
+    h3 {
+      color: blue;
+    }
+    .answer-btn {
+      width: 150px;
+      height: 50px;
+      font-size: 20px;
+      margin: 10px;
+    }
+    .answer-btn.yes {
+      background-color: green;
+    }
+    .answer-btn.no {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="Jennifer">Jennifer </h1>
+  <h1 id="wadie">wadie </h1>
+  
+  <h3 id="question1">Do you like this question?</h3>
+  <form id="form1">
+    <button class="answer-btn yes" type="button" onclick="Dynamo.clickListener(1, 'yes')">Yes</button>
+    <button class="answer-btn no" type="button" onclick="Dynamo.clickListener(1, 'no')">No</button>
+  </form>
+  <br>
+  <button id="next" onclick="nextQuestion()">next</button>
+  <br>
+  <h3 id="question2" style="display:none;">Do you like Second question?</h3>
+  <form id="form2" style="display:none;">
+    <button class="answer-btn yes" type="button" onclick="Dynamo.clickListener(2, 'yes')">Yes</button>
+    <button class="answer-btn no" type="button" onclick="Dynamo.clickListener(2, 'no')">No</button>
+  </form>
+</body>
+</html>

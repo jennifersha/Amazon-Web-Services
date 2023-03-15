@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Page</title>
+  <script src = "dynam.js"></script>
+  <style>
+    body {
+        background-color: #29a59d;
+    }
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #Jennifer, #wadie {
+        margin: 20px;
+    }
+    #question {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #form1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .answer-btn {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .answer-btn.yes {
+        background-color: rgb(36, 243, 36);
+    }
+    .answer-btn.no {
+        background-color: rgb(247, 27, 27);
+    }
+    #next {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        margin: 30px;
+        margin-left: 582px;
+        background-color: rgb(222, 255, 33);
+    }
+  </style>
+
+</head>
+<body onload = "Dynamo.initModule()">
+  <h1 id="Jennifer">Jennifer</h1>
+  <h1 id="wadie">wadie </h1>
+  
+  <h3 id="question">Do you like this question?</h3>
+  <form id="form1">
+    <button class="answer-btn yes" type="button" id = "ys">Yes</button>
+    <button class="answer-btn no" type="button" id = "no">No</button>
+  </form>
+  <br>
+  <button id="next" >Next</button>
+  <br>
+
+</body>
+</html>
